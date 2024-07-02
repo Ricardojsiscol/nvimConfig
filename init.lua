@@ -1,1 +1,2 @@
-require("ricardo.core.options")
+require("ricardo.core")
+require("ricardo.lazy")

@@ -39,3 +39,5 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false -- They are annoying
+
+vim.opt.hlsearch = true -- set highlight on search
