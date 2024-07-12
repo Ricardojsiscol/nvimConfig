@@ -6,6 +6,9 @@ local opt = vim.opt
 opt.relativenumber = true
 opt.number = true
 
+-- Enable mouse mode, can be useful for resizing splits for example!
+vim.opt.mouse = 'a'
+
 -- tabs and indentation
 opt.tabstop = 2 -- 2 spaces for tabs
 opt.shiftwidth = 2 -- 2 spaces for indent width
@@ -33,7 +36,7 @@ opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or 
 -- clipboard
 opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 
--- split windows
+- split windows
 opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
@@ -41,3 +44,21 @@ opt.splitbelow = true -- split horizontal window to the bottom
 opt.swapfile = false -- They are annoying
 
 vim.opt.hlsearch = true -- set highlight on search
+
+-- Decrease update time
+vim.opt.updatetime = 250
+
+-- Displays which-key popup sooner
+vim.opt.timeoutlen = 300
+
+-- Sets how neovim will display certain whitespace characters in the editor.
+--  See `:help 'list'`
+--  and `:help 'listchars'`
+vim.opt.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+-- Preview substitutions live, as you type!
+vim.opt.inccommand = 'split'
+
+-- Minimal number of screen lines to keep above and below the cursor.
+vim.opt.scrolloff = 20
